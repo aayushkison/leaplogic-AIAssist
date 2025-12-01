@@ -10,7 +10,7 @@ def hello():
     return {"message": "Hello from Streamlit API!"}
  
 def start_api():
-    uvicorn.run(api, host="0.0.0.0", port=8000)
+    uvicorn.run(api, host="https://leaplogic-assist.streamlit.app/", port=8000)
  
 Thread(target=start_api, daemon=True).start()
  
